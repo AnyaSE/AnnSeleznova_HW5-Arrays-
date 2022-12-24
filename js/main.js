@@ -40,4 +40,23 @@ console.log(`The index of the lowest number is ${numbersArray.indexOf(lowestNumb
 
 console.groupEnd();
 
+console.group('Знайти максимальний елемент масиву та його порядковий номер.');
+
+let highestNumber = numbersArray[0];
+
+for (let b = 0; b < numbersArray.length; b++) {
+    if (highestNumber < numbersArray[b]) {
+        const desiredNumber = numbersArray[b];
+        highestNumber = desiredNumber;
+    } else if (highestNumber < numbersArray[b]) {
+        highestNumber = numbersArray[b++];        
+    } else if (highestNumber === numbersArray[b])
+    highestNumber = highestNumber;
+};
+
+console.log(`The highest number in the array is ${highestNumber}`);
+
+console.log(`The index of the highest number is ${numbersArray.indexOf(highestNumber)}`);
+
+console.groupEnd();
 
