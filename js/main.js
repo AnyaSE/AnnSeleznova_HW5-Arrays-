@@ -75,3 +75,18 @@ for (let c = 0; c < numbersArray.length; c++) {
 console.log(`Number of negative numbers is ${numberOfNegative}`);
 
 console.groupEnd();
+
+console.group('Знайти добуток позитивних елементів.');
+
+multiplicationOfPositive = 1; 
+
+for (let q = 0; q < numbersArray.length; q++) {
+    if (numbersArray[q] > 0) {
+        const number = numbersArray[q];
+        multiplicationOfPositive = number*multiplicationOfPositive; 
+    }
+};
+
+console.log(`The multiplication of positive numbers is ${multiplicationOfPositive}`);
+
+console.groupEnd();
