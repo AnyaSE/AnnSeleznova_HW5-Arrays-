@@ -11,12 +11,12 @@ for (let i = 0; i < numbersArray.length; i++) {
     if (numbersArray[i] > 0) {
         const number = numbersArray[i];
         sumOfPositive = number + sumOfPositive; 
-        numberOfPositive = k++;
+        numberOfPositive = 1 + k++;
     }
 };
 
-console.log(`sum of positive numbers is ${sumOfPositive}`);
-console.log(`number of positive numbers is ${numberOfPositive}`);
+console.log(`The sum of positive numbers is ${sumOfPositive}`);
+console.log(`The number of positive numbers is ${numberOfPositive}`);
 
 console.groupEnd();
 
@@ -60,3 +60,18 @@ console.log(`The index of the highest number is ${numbersArray.indexOf(highestNu
 
 console.groupEnd();
 
+console.group('Визначити кількість негативних елементів.');
+
+let p = 0;
+let numberOfNegative = 0;
+
+for (let c = 0; c < numbersArray.length; c++) {
+    if (numbersArray[c] < 0) {
+        const number = numbersArray[c];
+        numberOfNegative = 1 + p++;
+    }
+};
+
+console.log(`Number of negative numbers is ${numberOfNegative}`);
+
+console.groupEnd();
