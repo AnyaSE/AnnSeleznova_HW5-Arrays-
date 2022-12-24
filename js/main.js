@@ -3,7 +3,7 @@ console.group('Знайти суму та кількість позитивни�
 
 const numbersArray = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47];
 
-sumOfPositive = 0; 
+let sumOfPositive = 0; 
 let k = 0;
 let numberOfPositive = 0;
 
@@ -78,7 +78,7 @@ console.groupEnd();
 
 console.group('Знайти добуток позитивних елементів.');
 
-multiplicationOfPositive = 1; 
+let multiplicationOfPositive = 1; 
 
 for (let q = 0; q < numbersArray.length; q++) {
     if (numbersArray[q] > 0) {
